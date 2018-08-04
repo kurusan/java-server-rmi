@@ -51,6 +51,10 @@ public interface DataInterface extends Remote{
 	public List <Account> getAccountsByCustomer(String customerID) throws RemoteException;
 	
 	public List <Operation> getOperationsByAccount(String accountID) throws RemoteException;
+	
+	public List <Agency> getAgencyByName(String agencyName) throws RemoteException;
+	
+	public List <Agency> getAgencyByID(String agencyID) throws RemoteException;
 
 	public String getAccountStat(String temp) throws RemoteException;
 	

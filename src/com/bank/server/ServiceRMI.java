@@ -30,8 +30,7 @@ public class ServiceRMI extends UnicastRemoteObject implements DataInterface{
 	 */
 	@Override
 	public void createAgency(Agency agency){
-		
-		System.out.println(cdao.insert(agency, "Agency"));
+		cdao.insert(agency, "Agency");
 	}
 	
 	/**
@@ -143,6 +142,18 @@ public class ServiceRMI extends UnicastRemoteObject implements DataInterface{
 
 	@Override
 	public String getAccountStat(String temp) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Agency> getAgencyByName(String agencyName) throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Agency> getAgencyByID(String agencyID) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
